@@ -20,13 +20,13 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        "name",
-        "prenom",
-        "email",
-        "password",
-        "telephone",
-        "addresse",
-        "react_token"
+        'name',
+         'prenom',
+        'email',
+        'password',
+        'telephone',
+        'addresse',
+        'react_token'
     ];
 
     

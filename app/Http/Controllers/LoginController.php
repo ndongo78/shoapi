@@ -70,7 +70,7 @@ class LoginController extends Controller
         //   $result=Password::sendResetLink(['email' => $user->email]);
             if($user){
                 
-               // Mail::to($user->email)->send(new ResetPasswordMail($user)); 
+                Mail::to($user->email)->send(new ResetPasswordMail($user)); 
 
                 //return response()->json($user);
             }else{

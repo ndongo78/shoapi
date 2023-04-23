@@ -122,11 +122,11 @@ class ArticleController extends Controller
     {
                    
         $validator=Validator::make($request->all(),[
-            "category_id"=>"required",
-            "title"=>"required","string",
-            "description"=>"required|string|min:8",
-            "price"=>"required|min:2|string",
-            "image"=>"required|image",
+            'category_id'=>"required",
+            'title'=>"required","string",
+            'description'=>"required|string|min:8",
+            'price'=>"required|min:2|string",
+            'image'=>"required|image",
             // 'colors'=>"required|string",
             // 'taille'=>"required",
         ],
