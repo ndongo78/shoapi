@@ -25,7 +25,7 @@ use App\Http\Controllers\MesclientsController;
 //     return $request->user();
 // });
 
-Route::post("/register.store",[RegisterController::class,'store']);
+Route::post("/register",[RegisterController::class,'store']);
 Route::post("/login",[LoginController::class,'connect']);
 Route::post("/adInfo",[LoginController::class,'adInfos']);
 Route::post("/updatePassword",[LoginController::class,'updatePassword']);
@@ -66,7 +66,7 @@ Route::middleware('shop_auth')->group(function(){
    Route::post("/promo",[PromotionController::class,'update']);
    Route::get("/verifyUserForResetPassword/{id}",[LoginController::class,'verifyUserForResetPassword']);
    Route::post("/updateForgotPassword",[LoginController::class,'updateForgotPassword']);
-   
+
    Route::get('/getAllCommandes',[CommandeController::class,'index']);
    Route::get('/getAllMessages',[MesclientsController::class,'index']);
    Route::post("/postMessage",[MesclientsController::class,'store']);
